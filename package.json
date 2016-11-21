@@ -1,0 +1,23 @@
+{
+  "name": "hope-s-basic",
+  "version": "1.0.1",
+  "description": "basic style for less",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/future-team/hope-s-basic.git"
+  },
+  "keywords": [
+    "css",
+    "style"
+  ],
+  "author": "ainiderenxm <277407493@qq.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/future-team/hope-s-basic/issues"
+  },
+  "homepage": "https://github.com/future-team/hope-s-basic#readme"
+}
