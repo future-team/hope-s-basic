@@ -1,0 +1,7 @@
+/* usage: .opacity(0.3); (取值在0-1) */
+
+.opacity(@factor:1) {
+    @iefactor: @factor*100;
+    filter: ~"alpha(opacity=@{iefactor})";
+    opacity: @factor;
+}

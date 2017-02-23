@@ -1,0 +1,61 @@
+/* usage: .transform(transform(100px) rotate(45deg)); */
+
+.transform(@args) {
+    -webkit-transform: @args;
+    -ms-transform: @args;
+    transform: @args;
+}
+
+/* usage: .transform-origin(top center); */
+.transform-origin(@args) {
+    -webkit-transform-origin: @args;
+    -ms-transform-origin: @args;
+    transform-origin: @args;
+}
+
+/* usage: .transform-style(preserve-3d); */
+.transform-style(@style) {
+    -webkit-transform-style: @style;
+    -ms-transform-style: @style;
+    transform-style: @style;
+}
+
+/* usage: .transform-translate(100px, 100px); */
+.transform-translate(@x:50px, @y:50px) {
+	-webkit-transform: translate(@x, @y);
+	-o-transform: translate(@x, @y);
+	-ms-transform: translate(@x, @y); 
+	transform: translate(@x, @y);
+}
+
+/* usage: .transform-translate3d(100px, 100px, 100px); */
+.transform-translate3d(@x:50px,@y:50px,@z:0) {
+    -webkit-transform: translate3d(@x, @y,@z);
+	-o-transform: translate3d(@x, @y,@z);
+	-ms-transform: translate3d(@x, @y,@z); 
+	transform: translate3d(@x, @y,@z);
+}
+
+/* usage: .transform-scale(2); */
+.transform-scale(@factor: 0.5) {
+	-webkit-transform: scale(@factor);
+	-o-transform: scale(@factor);
+	-ms-transform: scale(@factor); 
+	transform: scale(@factor);
+}
+
+/* usage: .transform-rotate(90deg); */
+.transform-rotate(@deg:45deg) {
+	-webkit-transform: rotate(@deg);
+	-o-transform: rotate(@deg);
+	-ms-transform: rotate(@deg); 
+	transform: rotate(@deg);
+}
+
+/* usage: .transform-matrix(1.5, 0, 0.7, 0.7, 200, 10); */
+.transform-matrix (@a:1, @c:0, @b:0.5, @d:0.5, @tx:0, @ty:0) {
+	-webkit-transform: matrix(@a, @c, @b, @d, @tx, @ty);
+	-o-transform: matrix(@a, @c, @b, @d, @tx, @ty);
+	-ms-transform:matrix(@a, @c, @b, @d, @tx, @ty);
+	transform: matrix(@a, @c, @b, @d, @tx, @ty);
+}

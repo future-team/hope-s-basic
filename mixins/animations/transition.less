@@ -4,8 +4,22 @@
 	-webkit-transition: @arguments;
 	-moz-transition: @arguments;
 	-o-transition: @arguments;
-	transition-property: @property;
-  	transition-duration: @duration;
-	transition-timing-function: @timing;
-  	transition-delay: @delay;
+	transition: @arguments;
+}
+
+.transition-delay(@delay:0) {
+	-webkit-transition-delay: @delay;
+    transition-delay: @delay;
+}
+.transition-duration(@duration:.5s) {
+	-webkit-transition-duration: @duration;
+    transition-duration: @duration;
+}
+.transition-property(@property:all) {
+	-webkit-transition-property: @property;
+    transition-property: @property;
+}
+.transition-timing-function(@function:linear) {
+	-webkit-transition-timing-function: @function;
+    transition-timing-function: @function;
 }

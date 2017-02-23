@@ -1,0 +1,40 @@
+@import 'animation';
+/* usage .fadein(); */
+
+@fadeIn-args:{
+    0% {
+        opacity:0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100% {
+        opacity:1;
+    }
+};
+@fadeOut-args:{
+    0% {
+        opacity:1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity:0;
+    }
+};
+
+.fadein(@type:fadeIn){
+    .keyframes(@type,@fadeIn-args);
+    .fadein{
+        .animation-name(@type);
+    }
+}
+
+.fadeout(@type:fadeOut){
+    .keyframes(@type,@fadeOut-args);
+    .fadeout{
+        .animation-name(@type);
+    }
+}
